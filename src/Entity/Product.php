@@ -78,7 +78,6 @@ class Product
     private $price;
 
     #[ORM\ManyToOne(targetEntity: Category::class, inversedBy: 'products')]
-    #[Groups(['read:Product:collection'])]
     private $category;
 
     public function getId(): ?int
