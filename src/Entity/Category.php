@@ -12,7 +12,7 @@ use Symfony\Component\Serializer\Annotation\Groups;
 #[ORM\Entity(repositoryClass: CategoryRepository::class)]
 #[ApiResource(
     denormalizationContext:['groups' => ['write:Category:collection']] , 
-    normalizationContext:['groups' => ['read:Category:collection']]
+    normalizationContext:['groups' => ['read:Category:collection']] // 
 )]
 class Category
 {
